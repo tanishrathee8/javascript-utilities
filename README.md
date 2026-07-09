@@ -102,15 +102,6 @@ or
 node strings/palindrome.js
 ```
 
-## Purpose
-
-This repository serves as:
-
-* Daily JavaScript practice
-* Interview preparation
-* A reusable collection of utility functions
-* A record of continuous learning and GitHub activity
-
 ## Future Improvements
 
 * Unit tests
@@ -118,6 +109,20 @@ This repository serves as:
 * Performance optimizations
 * Better documentation
 * Utility function benchmarks
+
+## Learning Goals
+
+This repository is part of my daily JavaScript practice.
+
+Topics covered include:
+
+- Arrays
+- Strings
+- Objects
+- Closures
+- Async JavaScript
+- ES6+
+- Problem Solving
 
 ## Author
 
