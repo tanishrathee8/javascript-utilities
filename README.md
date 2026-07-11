@@ -18,8 +18,13 @@ javascript-utilities/
 └── README.md
 ```
 
-## Categories
+## Folder Categories
 
+- Arrays
+- Strings
+- Numbers
+- Objects
+- Functions
 ### Arrays
 
 Utility functions related to arrays, searching, filtering, sorting, and transformations.
