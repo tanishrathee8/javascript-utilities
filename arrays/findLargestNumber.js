@@ -23,3 +23,4 @@ function findLargestNumber(arr) {
 }
 
 console.log(findLargestNumber([5, 9, 2, 14]));
+console.log(findLargestNumber([42]));
