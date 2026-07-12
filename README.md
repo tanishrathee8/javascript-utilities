@@ -17,6 +17,12 @@ javascript-utilities/
 │
 └── README.md
 ```
+## Repository Statistics
+
+- Organized into categories
+- 50+ JavaScript utilities (growing)
+- Built with JavaScript (ES6+)
+- Focused on interview preparation and reusable code
 
 ## Folder Categories
 
