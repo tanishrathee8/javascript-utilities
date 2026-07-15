@@ -4,19 +4,16 @@ A collection of reusable JavaScript utility functions built while practicing mod
 
 The goal of this repository is to strengthen JavaScript fundamentals through small, focused utility functions that solve common programming problems and demonstrate clean coding practices.
 
-## Project Structure
+## Folder Overview
 
-```
-javascript-utilities/
-│
-├── arrays/
-├── strings/
-├── numbers/
-├── objects/
-├── functions/
-│
-└── README.md
-```
+| Folder | Description |
+|--------|-------------|
+| arrays | Array algorithms and helper functions |
+| strings | String manipulation utilities |
+| numbers | Number and math utilities |
+| objects | Object helper functions |
+| functions | Higher-order and asynchronous utilities | 
+
 ## Repository Statistics
 
 - Organized into categories
