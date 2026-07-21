@@ -132,6 +132,14 @@ Topics covered include:
 - ES6+
 - Problem Solving
 
+## Upcoming Features
+
+- Unit tests using Jest
+- TypeScript versions of utilities
+- Performance improvements
+- npm package support
+- More interview-oriented algorithms
+
 ## Author
 
 Tanish Rathee
