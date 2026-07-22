@@ -1,3 +1,9 @@
+/**
+ * Performs binary search on a sorted array.
+ * @param {number[]} arr
+ * @param {number} target
+ * @returns {number} Index of target or -1 if not found.
+ */
 "use strict";
 function binarySearch(arr, target) {
   let left = 0;
