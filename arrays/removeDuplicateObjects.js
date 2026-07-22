@@ -1,5 +1,3 @@
-
-
 function removeDuplicateObjects(arr, key) {
   const seen = new Set();
 
