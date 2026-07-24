@@ -14,6 +14,14 @@ The goal of this repository is to strengthen JavaScript fundamentals through sma
 | objects | Object helper functions |
 | functions | Higher-order and asynchronous utilities | 
 
+
+## Code Style
+
+- Use camelCase naming.
+- Keep functions pure when possible.
+- Validate inputs where appropriate.
+- Write descriptive commit messages.
+
 ## Repository Statistics
 
 - Organized into categories
