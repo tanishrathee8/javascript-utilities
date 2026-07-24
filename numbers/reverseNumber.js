@@ -6,3 +6,4 @@ function reverseNumber(num) {
 
 console.log(reverseNumber(12345));
 console.log(reverseNumber(-9876));
+console.log(reverseNumber(1000));
