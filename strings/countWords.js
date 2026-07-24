@@ -1,3 +1,4 @@
+"use strict";
 function countWords(text) {
   if (text.trim() === "") {
     return 0;
