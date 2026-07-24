@@ -1,3 +1,6 @@
+/**
+ * Randomly shuffles an array using the Fisher-Yates algorithm.
+ */
 function shuffleArray(arr) {
   if (!Array.isArray(arr)) {
     throw new TypeError("Expected an array.");
