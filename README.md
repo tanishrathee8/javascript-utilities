@@ -126,6 +126,13 @@ node strings/palindrome.js
 * Better documentation
 * Utility function benchmarks
 
+## Best Practices
+
+- Keep utilities focused on a single task.
+- Validate function inputs.
+- Use meaningful variable names.
+- Keep functions reusable.
+
 ## Learning Goals
 
 This repository is part of my daily JavaScript practice.
