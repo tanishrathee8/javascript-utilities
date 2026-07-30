@@ -8,3 +8,4 @@ function getInitials(name) {
 
 console.log(getInitials("Tanish Rathee"));
 console.log(getInitials("John Ronald Reuel Tolkien"));
+console.log(getInitials("A B C"));
