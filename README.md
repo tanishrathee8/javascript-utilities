@@ -4,6 +4,13 @@ A collection of reusable JavaScript utility functions built while practicing mod
 
 The goal of this repository is to strengthen JavaScript fundamentals through small, focused utility functions that solve common programming problems and demonstrate clean coding practices.
 
+## Repository Highlights
+
+-  Well-organized folder structure
+-  Reusable JavaScript utilities
+-  Continuous daily improvements
+-  Covers common interview questions and practical helper functions
+
 ## Folder Overview
 
 | Folder | Description |
