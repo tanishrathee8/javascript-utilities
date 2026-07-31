@@ -1,5 +1,9 @@
 /**
- * Performs binary search on a sorted array.
+ * Performs binary search on a sorted numeric array.
+ * Returns the index of the target or -1 if not found.
+ */
+/**
+
  * @param {number[]} arr
  * @param {number} target
  * @returns {number} Index of target or -1 if not found.
