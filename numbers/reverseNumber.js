@@ -1,9 +1,10 @@
-function reverseNumber(num) {
-  const reversed = Number(String(Math.abs(num)).split("").reverse().join(""));
+function reverseNumber(number) {
+  const reversed = Number(
+    Math.abs(number).toString().split("").reverse().join("")
+  );
 
-  return num < 0 ? -reversed : reversed;
+  return number < 0 ? -reversed : reversed;
 }
 
 console.log(reverseNumber(12345));
 console.log(reverseNumber(-9876));
-console.log(reverseNumber(1000));
