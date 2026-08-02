@@ -36,13 +36,16 @@ The goal of this repository is to strengthen JavaScript fundamentals through sma
 - Built with JavaScript (ES6+)
 - Focused on interview preparation and reusable code
 
-## Folder Categories
+## Categories
 
-- Arrays
-- Strings
-- Numbers
-- Objects
-- Functions
+-  Arrays
+-  Strings
+-  Numbers
+-  Objects
+-  Functions
+
+Each utility is independent, documented, and can be executed with Node.js.
+
 ### Arrays
 
 Utility functions related to arrays, searching, filtering, sorting, and transformations.
