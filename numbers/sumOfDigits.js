@@ -1,4 +1,8 @@
 function sumOfDigits(number) {
+  if (!Number.isInteger(number)) {
+    throw new TypeError("Input must be an integer.");
+  }
+
   return Math.abs(number)
     .toString()
     .split("")
