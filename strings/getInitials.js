@@ -1,4 +1,8 @@
 function getInitials(name) {
+  if (typeof name !== "string" || name.trim() === "") {
+    return "";
+  }
+
   return name
     .trim()
     .split(/\s+/)
@@ -8,4 +12,3 @@ function getInitials(name) {
 
 console.log(getInitials("Tanish Rathee"));
 console.log(getInitials("John Ronald Reuel Tolkien"));
-console.log(getInitials("A B C"));
