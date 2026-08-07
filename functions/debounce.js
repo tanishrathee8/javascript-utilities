@@ -1,3 +1,9 @@
+/**
+ * Returns a debounced version of a function.
+ * @param {Function} callback
+ * @param {number} delay
+ * @returns {Function}
+ */
 function debounce(callback, delay) {
   let timer;
 
