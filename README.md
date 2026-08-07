@@ -36,6 +36,13 @@ The goal of this repository is to strengthen JavaScript fundamentals through sma
 - Built with JavaScript (ES6+)
 - Focused on interview preparation and reusable code
 
+## Repository Metrics
+
+-  Organized into 5 categories
+-  70+ reusable JavaScript utilities
+-  Written in modern JavaScript (ES6+)
+-  Updated regularly with new utilities and improvements
+
 ## Categories
 
 -  Arrays
