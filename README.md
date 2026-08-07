@@ -29,12 +29,12 @@ The goal of this repository is to strengthen JavaScript fundamentals through sma
 - Validate inputs where appropriate.
 - Write descriptive commit messages.
 
-## Repository Statistics
+##  Repository Statistics
 
-- Organized into categories
-- 50+ JavaScript utilities (growing)
-- Built with JavaScript (ES6+)
-- Focused on interview preparation and reusable code
+-  Categories: Arrays, Strings, Numbers, Objects, Functions
+-  Reusable JavaScript utility functions
+-  Built using JavaScript (ES6+)
+-  Continuously improved with new features and refactoring
 
 ## Repository Metrics
 
