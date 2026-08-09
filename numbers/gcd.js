@@ -1,3 +1,6 @@
+/**
+ * Calculates the greatest common divisor of two integers.
+ */
 function gcd(a, b) {
   if (!Number.isInteger(a) || !Number.isInteger(b)) {
     throw new TypeError("Inputs must be integers.");
