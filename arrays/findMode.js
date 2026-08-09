@@ -16,3 +16,4 @@ function findMode(arr) {
 }
 
 console.log(findMode([1, 2, 2, 3, 4, 2, 5]));
+console.log(findMode([5]));
