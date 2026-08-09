@@ -15,3 +15,4 @@ function gcd(a, b) {
 
 console.log(gcd(24, 18));
 console.log(gcd(-24, 18));
+console.log(gcd(0, 12));
