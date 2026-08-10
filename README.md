@@ -29,6 +29,21 @@ The goal of this repository is to strengthen JavaScript fundamentals through sma
 - Validate inputs where appropriate.
 - Write descriptive commit messages.
 
+## Concepts Practiced
+
+This repository covers practical JavaScript concepts including:
+
+- Array manipulation
+- String processing
+- Object manipulation
+- Number algorithms
+- ES6+ features
+- Higher-order functions
+- Input validation
+- Regular expressions
+- Asynchronous JavaScript
+- Problem-solving patterns
+
 ##  Repository Statistics
 
 -  Categories: Arrays, Strings, Numbers, Objects, Functions
