@@ -1,19 +1,23 @@
 function findMode(arr) {
+  if (!Array.isArray(arr) || arr.length === 0) {
+    return null;
+  }
+
   const frequency = {};
   let mode = arr[0];
   let maxCount = 0;
 
-  for (const num of arr) {
-    frequency[num] = (frequency[num] || 0) + 1;
+  for (const value of arr) {
+    frequency[value] = (frequency[value] || 0) + 1;
 
-    if (frequency[num] > maxCount) {
-      maxCount = frequency[num];
-      mode = num;
+    if (frequency[value] > maxCount) {
+      maxCount = frequency[value];
+      mode = value;
     }
   }
 
   return mode;
 }
 
-console.log(findMode([1, 2, 2, 3, 4, 2, 5]));
-console.log(findMode([5]));
+console.log(findMode([1, 2, 2, 3, 2, 4]));
+console.log(findMode([]));
