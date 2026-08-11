@@ -5,7 +5,12 @@ function gcd(a, b) {
 
   return Math.abs(a);
 }
-
+/**
+ * Calculates the least common multiple of two integers.
+ * @param {number} a
+ * @param {number} b
+ * @returns {number}
+ */
 function lcm(a, b) {
   if (!Number.isInteger(a) || !Number.isInteger(b)) {
     throw new TypeError("Inputs must be integers.");
