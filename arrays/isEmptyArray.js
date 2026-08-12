@@ -1,5 +1,9 @@
 function isEmptyArray(arr) {
-  return Array.isArray(arr) && arr.length === 0;
+  if (!Array.isArray(arr)) {
+    throw new TypeError("Input must be an array.");
+  }
+
+  return arr.length === 0;
 }
 
 console.log(isEmptyArray([]));
