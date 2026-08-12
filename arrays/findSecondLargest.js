@@ -1,3 +1,8 @@
+/**
+ * Finds the second largest unique number in an array.
+ * @param {number[]} arr
+ * @returns {number|null}
+ */
 function findSecondLargest(arr) {
   if (!Array.isArray(arr) || arr.length < 2) {
     return null;
