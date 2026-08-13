@@ -13,4 +13,6 @@ function findSecondLargest(arr) {
   return unique.length < 2 ? null : unique[1];
 }
 
-console.log(findSecondLargest([10, 5, 20, 8, 20]));
+console.log(findSecondLargest([10, 10, 5]));
+console.log(findSecondLargest([42]));
+console.log(findSecondLargest([]));
