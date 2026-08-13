@@ -1,3 +1,9 @@
+/**
+ * Retrieves a nested object value using a dot-separated path.
+ * @param {Object} obj
+ * @param {string} path
+ * @returns {*}
+ */
 function getNestedValue(obj, path) {
   return path.split(".").reduce((current, key) => {
     return current?.[key];
