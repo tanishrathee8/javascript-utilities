@@ -1,11 +1,10 @@
-/**
- * Finds the second smallest unique number in an array.
- * @param {number[]} arr
- * @returns {number|null}
- */
 function findSecondSmallest(arr) {
   if (!Array.isArray(arr) || arr.length < 2) {
     return null;
+  }
+
+  if (!arr.every(num => typeof num === "number")) {
+    throw new TypeError("Array must contain only numbers.");
   }
 
   const unique = [...new Set(arr)].sort((a, b) => a - b);
