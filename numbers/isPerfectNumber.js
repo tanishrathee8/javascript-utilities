@@ -20,3 +20,4 @@ function isPerfectNumber(number) {
 
 console.log(isPerfectNumber(28));
 console.log(isPerfectNumber(12));
+console.log(isPerfectNumber(6));
