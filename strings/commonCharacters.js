@@ -5,3 +5,4 @@ function commonCharacters(str1, str2) {
 }
 
 console.log(commonCharacters("javascript", "java"));
+console.log(commonCharacters("abc", "xyz"));
