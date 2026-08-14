@@ -22,3 +22,4 @@ const user = {
 console.log(getNestedValue(user, "profile.address.city"));
 console.log(getNestedValue(user, "profile.phone"));
 console.log(getNestedValue({}, "profile.name"));
+console.log(getNestedValue(user, "profile.address.country"));
