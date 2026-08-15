@@ -1,3 +1,8 @@
+/**
+ * Creates a new object by swapping keys and values.
+ * @param {Object} obj
+ * @returns {Object}
+ */
 function invertObject(obj) {
   const result = {};
 
