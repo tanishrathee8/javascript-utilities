@@ -3,6 +3,10 @@ function findMedian(arr) {
     return null;
   }
 
+  if (!arr.every(num => typeof num === "number" && Number.isFinite(num))) {
+    throw new TypeError("Array must contain only finite numbers.");
+  }
+
   const sorted = [...arr].sort((a, b) => a - b);
   const middle = Math.floor(sorted.length / 2);
 
