@@ -138,16 +138,20 @@ Examples:
 
 Clone the repository and execute any file using Node.js.
 
-Example:
+## Example
 
-```bash
-node arrays/findLargestNumber.js
+```javascript
+function isEven(number) {
+  return number % 2 === 0;
+}
+
+console.log(isEven(10));
 ```
 
-or
+Run a utility with Node.js:
 
 ```bash
-node strings/palindrome.js
+node numbers/isEven.js
 ```
 
 ## Future Improvements
