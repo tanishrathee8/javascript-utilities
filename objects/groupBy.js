@@ -19,3 +19,5 @@ const users = [
 ];
 
 console.log(groupBy(users, "role"));
+console.log(groupBy([], "role"));
+console.log(groupBy(users, "name"));
