@@ -1,8 +1,8 @@
 function flattenArray(arr) {
-  return arr.flat();
-}
+  if (!Array.isArray(arr)) {
+    throw new TypeError("Input must be an array.");
+  }
 
-console.log(flattenArray([[1,2],[3,4],[5,6]]));function flattenArray(arr) {
   return arr.flat(Infinity);
 }
 
