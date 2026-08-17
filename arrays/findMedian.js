@@ -19,3 +19,5 @@ function findMedian(arr) {
 
 console.log(findMedian([5, 2, 8, 1, 4]));
 console.log(findMedian([1, 2, 3, 4]));
+console.log(findMedian([10]));
+console.log(findMedian([]));
