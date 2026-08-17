@@ -1,3 +1,8 @@
+/**
+ * Creates a function that can only execute once.
+ * @param {Function} fn
+ * @returns {Function}
+ */
 function once(fn) {
   let called = false;
   let result;
