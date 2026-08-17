@@ -14,3 +14,5 @@ const user = {
 };
 
 console.log(findKeyByValue(user, "developer"));
+console.log(findKeyByValue(user, "unknown"));
+console.log(findKeyByValue(user, "Tanish"));
