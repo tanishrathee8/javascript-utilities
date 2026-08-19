@@ -2,15 +2,15 @@ function findDuplicates(arr) {
   const seen = new Set();
   const duplicates = new Set();
 
-  for (const item of arr) {
-    if (seen.has(item)) {
-      duplicates.add(item);
+  for (const value of arr) {
+    if (seen.has(value)) {
+      duplicates.add(value);
     } else {
-      seen.add(item);
+      seen.add(value);
     }
   }
 
   return [...duplicates];
 }
 
-console.log(findDuplicates([1, 2, 3, 2, 4, 5, 1, 6]));
+console.log(findDuplicates([1, 2, 3, 2, 4, 1, 5]));
