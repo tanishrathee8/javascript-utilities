@@ -1,4 +1,8 @@
 function groupBy(arr, key) {
+  if (!Array.isArray(arr)) {
+    throw new TypeError("Input must be an array.");
+  }
+
   return arr.reduce((groups, item) => {
     const value = item[key];
 
@@ -19,5 +23,3 @@ const users = [
 ];
 
 console.log(groupBy(users, "role"));
-console.log(groupBy([], "role"));
-console.log(groupBy(users, "name"));
