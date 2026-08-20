@@ -11,3 +11,6 @@ function minutesToTime(totalMinutes) {
 
 console.log(minutesToTime(135));
 console.log(minutesToTime(45));
+console.log(minutesToTime(0));
+console.log(minutesToTime(60));
+console.log(minutesToTime(1440));
