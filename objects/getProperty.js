@@ -1,3 +1,10 @@
+/**
+ * Safely retrieves a property from an object.
+ * @param {Object} obj
+ * @param {string} key
+ * @param {*} defaultValue
+ * @returns {*}
+ */
 function getProperty(obj, key, defaultValue = null) {
   if (obj === null || typeof obj !== "object") {
     throw new TypeError("Input must be an object.");
