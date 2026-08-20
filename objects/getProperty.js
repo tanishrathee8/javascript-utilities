@@ -1,24 +1,25 @@
-/**
- * Safely retrieves a property from an object.
- * @param {Object} obj
- * @param {string} key
- * @param {*} defaultValue
- * @returns {*}
- */
-function getProperty(obj, key, defaultValue = null) {
+function getProperty(obj, path, defaultValue = null) {
   if (obj === null || typeof obj !== "object") {
     throw new TypeError("Input must be an object.");
   }
 
-  return Object.prototype.hasOwnProperty.call(obj, key)
-    ? obj[key]
-    : defaultValue;
+  if (typeof path !== "string" || path.trim() === "") {
+    return defaultValue;
+  }
+
+  const value = path.split(".").reduce((current, key) => {
+    return current?.[key];
+  }, obj);
+
+  return value ?? defaultValue;
 }
 
 const user = {
   name: "Tanish",
-  age: 21
+  profile: {
+    city: "Delhi"
+  }
 };
 
-console.log(getProperty(user, "name"));
-console.log(getProperty(user, "city", "Unknown"));
+console.log(getProperty(user, "profile.city"));
+console.log(getProperty(user, "profile.country", "Unknown"));
