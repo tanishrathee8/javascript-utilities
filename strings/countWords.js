@@ -3,7 +3,12 @@ function countWords(str) {
     return 0;
   }
 
-  return str.trim().split(/\s+/).length;
+  const words = str
+    .trim()
+    .replace(/[.,!?;:]+/g, "")
+    .split(/\s+/);
+
+  return words.length;
 }
 
-console.log(countWords("JavaScript is fun to learn"));
+console.log(countWords("Hello, JavaScript! How are you?"));
