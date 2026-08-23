@@ -1,10 +1,9 @@
-"use strict";
-function countWords(text) {
-  if (text.trim() === "") {
+function countWords(str) {
+  if (typeof str !== "string" || str.trim() === "") {
     return 0;
   }
 
-  return text.trim().split(/\s+/).length;
+  return str.trim().split(/\s+/).length;
 }
 
 console.log(countWords("JavaScript is fun to learn"));
