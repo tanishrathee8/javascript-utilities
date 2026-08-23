@@ -1,10 +1,9 @@
 function calculatePercentage(value, total) {
-  if (total === 0) {
-    throw new Error("Total cannot be zero.");
+  if (!Number.isFinite(value) || !Number.isFinite(total) || total === 0) {
+    throw new TypeError("Value and total must be valid numbers.");
   }
 
-  return ((value / total) * 100).toFixed(2) + "%";
+  return (value / total) * 100;
 }
 
 console.log(calculatePercentage(45, 60));
-console.log(calculatePercentage(75, 150));
