@@ -1,5 +1,9 @@
 function reverseWords(sentence) {
-  return sentence.split(" ").reverse().join(" ");
+  if (typeof sentence !== "string") {
+    throw new TypeError("Input must be a string.");
+  }
+
+  return sentence.trim().split(/\s+/).reverse().join(" ");
 }
 
-console.log(reverseWords("I love JavaScript"));
+console.log(reverseWords("JavaScript is fun"));
