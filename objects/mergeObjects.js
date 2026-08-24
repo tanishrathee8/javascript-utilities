@@ -11,9 +11,14 @@ function mergeObjects(obj1, obj2) {
   return { ...obj1, ...obj2 };
 }
 
-console.log(
-  mergeObjects(
-    { name: "Tanish", age: 21 },
-    { role: "developer" }
-  )
-);
+const user = {
+  name: "Tanish",
+  age: 21
+};
+
+const details = {
+  age: 22,
+  role: "developer"
+};
+
+console.log(mergeObjects(user, details));
