@@ -1,11 +1,17 @@
 function characterFrequency(str) {
-  const freq = {};
-
-  for (let char of str) {
-    freq[char] = (freq[char] || 0) + 1;
+  if (typeof str !== "string") {
+    throw new TypeError("Input must be a string.");
   }
 
-  return freq;
+  const frequency = {};
+
+  for (const char of str) {
+    if (char === " ") continue;
+
+    frequency[char] = (frequency[char] || 0) + 1;
+  }
+
+  return frequency;
 }
 
 console.log(characterFrequency("javascript"));
