@@ -1,9 +1,3 @@
-/**
- * Returns a debounced version of a function.
- * @param {Function} callback
- * @param {number} delay
- * @returns {Function}
- */
 function debounce(callback, delay) {
   let timer;
 
@@ -16,6 +10,8 @@ function debounce(callback, delay) {
   };
 }
 
-const print = debounce((text) => console.log(text), 1000);
+const search = debounce((value) => {
+  console.log("Searching for:", value);
+}, 500);
 
-print("Hello");
+search("JavaScript");
