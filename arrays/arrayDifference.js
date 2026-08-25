@@ -8,4 +8,5 @@ function arrayDifference(arr1, arr2) {
   return [...new Set(arr1)].filter(value => !secondArray.has(value));
 }
 
-console.log(arrayDifference([1, 2, 3, 4], [2, 4]));
+console.log(arrayDifference([1, 2, 2, 3, 4], [2, 4]));
+console.log(arrayDifference([], [1, 2]));
