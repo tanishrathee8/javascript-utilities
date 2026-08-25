@@ -1,3 +1,8 @@
+/**
+ * Counts the frequency of each non-space character.
+ * @param {string} str
+ * @returns {Object}
+ */
 function characterFrequency(str) {
   if (typeof str !== "string") {
     throw new TypeError("Input must be a string.");
