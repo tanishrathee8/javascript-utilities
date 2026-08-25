@@ -11,3 +11,5 @@ function simpleInterest(principal, rate, time) {
 }
 
 console.log(simpleInterest(1000, 5, 2));
+console.log(simpleInterest(0, 5, 10));
+console.log(simpleInterest(5000, 0, 3));
