@@ -11,3 +11,10 @@ function getStorage(key) {
 setStorage("user", { name: "Tanish", role: "developer" });
 
 console.log(getStorage("user"));
+function removeStorage(key) {
+  localStorage.removeItem(key);
+}
+
+removeStorage("user");
+
+console.log(getStorage("user"));
