@@ -1,21 +1,27 @@
 function memoize(fn) {
-  const cache = {};
+  const cache = new Map();
 
   return function (...args) {
     const key = JSON.stringify(args);
 
-    if (cache[key]) {
-      return cache[key];
+    if (cache.has(key)) {
+      return cache.get(key);
     }
 
     const result = fn(...args);
-    cache[key] = result;
+
+    cache.set(key, result);
 
     return result;
   };
 }
 
-const square = memoize(num => num * num);
+const slowAdd = (a, b) => {
+  console.log("Calculating...");
+  return a + b;
+};
 
-console.log(square(5));
-console.log(square(5));
+const add = memoize(slowAdd);
+
+console.log(add(5, 10));
+console.log(add(5, 10));
