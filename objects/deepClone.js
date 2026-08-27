@@ -1,5 +1,13 @@
 function deepClone(obj) {
-  return structuredClone(obj);
+  if (obj === null || typeof obj !== "object") {
+    return obj;
+  }
+
+  if (typeof structuredClone === "function") {
+    return structuredClone(obj);
+  }
+
+  return JSON.parse(JSON.stringify(obj));
 }
 
 const user = {
@@ -7,6 +15,9 @@ const user = {
   skills: ["JavaScript", "React"]
 };
 
-const clone = deepClone(user);
+const clonedUser = deepClone(user);
 
-console.log(clone);
+clonedUser.skills.push("Node.js");
+
+console.log(user);
+console.log(clonedUser);
