@@ -1,4 +1,4 @@
-function startOfDay(date) {
+function startOfDay(date = new Date()) {
   const result = new Date(date);
 
   result.setHours(0, 0, 0, 0);
@@ -6,6 +6,4 @@ function startOfDay(date) {
   return result;
 }
 
-const date = new Date("2026-09-18T17:45:30");
-
-console.log(startOfDay(date));
+module.exports = startOfDay;
