@@ -1,13 +1,15 @@
 function isValidURL(value) {
+  if (typeof value !== "string" || !value.trim()) {
+    return false;
+  }
+
   try {
     const url = new URL(value);
 
-    return url.protocol === "http:" ||
-           url.protocol === "https:";
+    return url.protocol === "http:" || url.protocol === "https:";
   } catch {
     return false;
   }
 }
 
-console.log(isValidURL("https://github.com"));
-console.log(isValidURL("not-a-url"));
+module.exports = isValidURL;
