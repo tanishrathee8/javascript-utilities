@@ -1,20 +1,16 @@
-function partition(arr, predicate) {
-  return arr.reduce(
-    ([passed, failed], item) => {
-      if (predicate(item)) {
-        passed.push(item);
-      } else {
-        failed.push(item);
-      }
+function partition(array, predicate) {
+  const truthy = [];
+  const falsy = [];
 
-      return [passed, failed];
-    },
-    [[], []]
-  );
+  for (const item of array) {
+    if (predicate(item)) {
+      truthy.push(item);
+    } else {
+      falsy.push(item);
+    }
+  }
+
+  return [truthy, falsy];
 }
 
-const numbers = [1, 2, 3, 4, 5, 6];
-
-console.log(
-  partition(numbers, number => number % 2 === 0)
-);
+module.exports = partition;
